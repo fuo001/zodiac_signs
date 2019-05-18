@@ -69,3 +69,20 @@ def sign(date):
 		else:
 			sign = 'Sagittarius'
 	return sign
+
+
+if __name__ == '__main__':
+    assert sign("") == "Couldn't get Zodaic Sign. No DOB"
+    assert sign(str(datetime.date(2020, 1, 20))) == "Aquarius"
+    assert sign(str(datetime.date(2020, 2, 19))) == "Pisces"
+    assert sign(str(datetime.date(2020, 3, 22))) == "Aries"
+    assert sign(str(datetime.date(2020, 4, 21))) == "Taurus"
+    assert sign(str(datetime.date(2020, 5, 21))) == "Gemini"
+    assert sign(str(datetime.date(2020, 6, 22))) == "Cancer"
+    assert sign(str(datetime.date(2020, 7, 27))) == "Leo"
+    assert sign(str(datetime.date(2020, 8, 24))) == "Virgo"
+    assert sign(str(datetime.date(2020, 9, 25))) == "Libra"
+    assert sign(str(datetime.date(2020, 10, 29))) == "Scorpio"
+    assert sign(str(datetime.date(2020, 11, 30))) == "Sagittarius"
+    assert sign(str(datetime.date(2020, 12, 25))) == "Capricorn"
+
